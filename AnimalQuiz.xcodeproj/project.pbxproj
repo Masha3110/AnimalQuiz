@@ -13,6 +13,10 @@
 		F935544128018AB200BE59BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F935543F28018AB200BE59BB /* Main.storyboard */; };
 		F935544328018ABA00BE59BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F935544228018ABA00BE59BB /* Assets.xcassets */; };
 		F935544628018ABA00BE59BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F935544428018ABA00BE59BB /* LaunchScreen.storyboard */; };
+		F93554522801932600BE59BB /* QuestionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93554512801932600BE59BB /* QuestionsController.swift */; };
+		F93554542801967300BE59BB /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93554532801967300BE59BB /* ResultViewController.swift */; };
+		F93554572801A50F00BE59BB /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93554562801A50F00BE59BB /* Question.swift */; };
+		F93554592801A52A00BE59BB /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93554582801A52A00BE59BB /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F935544228018ABA00BE59BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F935544528018ABA00BE59BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F935544728018ABA00BE59BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F93554512801932600BE59BB /* QuestionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsController.swift; sourceTree = "<group>"; };
+		F93554532801967300BE59BB /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		F93554562801A50F00BE59BB /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		F93554582801A52A00BE59BB /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		F935543828018AB200BE59BB /* AnimalQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				F93554552801A4DD00BE59BB /*  Models */,
 				F935544E28018B8700BE59BB /* Supporting Files */,
 				F935544D28018AD200BE59BB /* StroryBoard */,
 				F935544F28018BFD00BE59BB /* ViewController */,
@@ -87,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				F935543D28018AB200BE59BB /* ViewController.swift */,
+				F93554512801932600BE59BB /* QuestionsController.swift */,
+				F93554532801967300BE59BB /* ResultViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -97,6 +108,15 @@
 				F935544228018ABA00BE59BB /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		F93554552801A4DD00BE59BB /*  Models */ = {
+			isa = PBXGroup;
+			children = (
+				F93554562801A50F00BE59BB /* Question.swift */,
+				F93554582801A52A00BE59BB /* Answer.swift */,
+			);
+			path = " Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F93554542801967300BE59BB /* ResultViewController.swift in Sources */,
 				F935543E28018AB200BE59BB /* ViewController.swift in Sources */,
 				F935543A28018AB200BE59BB /* AppDelegate.swift in Sources */,
+				F93554592801A52A00BE59BB /* Answer.swift in Sources */,
+				F93554572801A50F00BE59BB /* Question.swift in Sources */,
 				F935543C28018AB200BE59BB /* SceneDelegate.swift in Sources */,
+				F93554522801932600BE59BB /* QuestionsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -304,6 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -322,7 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimalQuiz/Info.plist;
+				INFOPLIST_FILE = "AnimalQuiz/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -349,7 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimalQuiz/Info.plist;
+				INFOPLIST_FILE = "AnimalQuiz/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
